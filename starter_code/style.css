@@ -1,11 +1,19 @@
 /*-------- Utility Styles --------*/
 * {
 	box-sizing: border-box; 
+
+	font-family: 'Proza Libre', sans-serif;
+	background-color: #E3E6EC;
+
+
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 }
 
-/* 
+
+/*
+
+
 	Use Google Fonts to make all of the text Proza Libre.
 
 	Make the Title twice as large as the body text, bold, and spaced evenly.
@@ -13,6 +21,62 @@
 
 /*-------- Main Styles --------*/
 
+h1 {
+	font-size: 30px;
+}
+
+#main {
+	width: 100%;
+}
+
+#form-group {
+	width: 100%;
+	display: inline-block;
+
+
+}
+
+#name {
+	border-radius: 15px;
+}
+
+#mission {
+	border-radius: 15px;
+}
+
+#noun-1 {
+	border-radius: 15px;
+}
+
+#noun-2 {
+	border-radius: 15px;
+}
+
+.row {
+	margin: 10px;
+}
+
+.radiobuttons {
+	display: block;
+	margin-left: 5%;
+	box-shadow: none;
+	align-items:
+
+}
+
+.row.formGroup {
+	border-radius: 15px;
+	
+}
+
+}
+input-label {
+	display: block;
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 2px:;
+
+}
 /* 
 	Make the main container the full width of the page.
 

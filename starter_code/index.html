@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>CSS HTML Forms Lab</title>
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -113,7 +114,40 @@
 		*/
 
 
-		$("form").on("submit", function(event){
+			$("form").on("submit", function(event){
+			event.preventDefault();
+			makeResults();
+
+
+
+		 	 var $onceUpon = "Once upon a time there was a Developer named " + $ ('#name').val() + ".  ";
+              console.log("$onceUpon");
+              $ ('.results').append($onceUpon);
+
+
+              var $GA = $ ( '#name').val() + " came to General Asssembly to " + $ ('#verb-1').val() + " the great mountain of programming knowledge. ";
+             console.log("GA");
+             $ ('.results').append($GA);
+
+
+           	 var $mission = $ ('#mission').val() + ", " + $ ('#name').val() + " shouted. ";
+           	console.log("mission");
+           	 $ ('.results').append($mission);
+
+          	 var $firstnoun = "Though " + $ ('.radioButtons').val() + ", " + $ ('#name').val() + " was able to overcome all obstacles with the power of their " + $ ('#noun-1').val() + ".";
+                 console.log("though");
+                $ ('.results').append($firstnoun);
+             
+
+                var $end = "In the end, their success can be contributed entirely to their " + $ ('#check1').val() + ","+ $ ('#check2').val() + "," + $ ('#check3').val() + $ ('#noun-2').val() + " .";
+                 console.log("end");
+                $ ('esults').append($end);
+                
+
+           	 // var $success = $ "In the end, their success can be contributed entirely to their" + $ ('#radio2').val() + 
+
+
+
 
 		    // Stop the form from submitting
 
@@ -123,7 +157,7 @@
 			
 				For each value entered into a form input, add the input to the corresponding sentence, then append the text into the results section:
 
-				"Once upon a time there was a Developer named NAME."
+				
 
 				"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
 
